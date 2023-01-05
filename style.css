@@ -2,7 +2,7 @@
     --clr-primary-tan: #F0EFD6;
     --clr-primary-blue: #7694B2;
     --clr-primary-orange: #E5A055;
-
+    --clr-primary-neutral:#ffff;
     --clr-neutral-black:#202020;
 
     --ff-primary: 'Playfair Display', serif;
@@ -118,6 +118,10 @@ svg {
 
 .text-tan{
     color:var(--clr-primary-tan)
+}
+
+.text-white{
+  color:var(--clr-primary-neutral)
 }
 
 .background-blue{
