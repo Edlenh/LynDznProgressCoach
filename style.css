@@ -225,9 +225,9 @@ body{
   box-shadow: 0 1.125em 1em -1em var(--clr-accent-black);
 }
 
-.button[data-type="inverted"]{
+/* .button[data-type="inverted"]{
 
-}
+} */
 
 .button:hover,
 .button:focus-visible{
