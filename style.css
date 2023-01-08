@@ -114,29 +114,6 @@ svg {
     scroll-behavior: auto !important;
   }
 }
-
-.container {
-  --max-width: 1110px;
-  --padding: 1rem;
-
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
-  margin-inline: auto;
-}
-
-.even-columns{
-  display: grid;
-  gap:1rem;
-}
-
-@media(min-width:50em){
-  .even-columns{
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-}
-
-
-
 /* general styling */
 
 body{
@@ -144,6 +121,15 @@ body{
   font-family: var(--ff-primary);
   color:var(--clr-neutral-black);
   background-color: var(--clr-primary-tan);
+}
+
+p:not([class]){
+opacity: 0.7;
+max-width: 42ch;
+}
+
+p[data-width="wide"]{
+  max-width: 100%;
 }
 
 .button{
@@ -271,6 +257,29 @@ white-space: nowrap !important;
 border: 0 !important;
 }
 
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+:where(.flow>:not(:first-child)){
+  margin-top: var(--flow-spacer, 3em);
+}
+
+.even-columns{
+  display: grid;
+  gap:1rem;
+}
+
+@media(min-width:50em){
+  .even-columns{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
 
 .text-blue{
     color:var(--clr-primary-blue)
