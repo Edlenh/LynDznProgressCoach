@@ -2,21 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="images/speech.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LynDznCoach</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 
-
+    <script src="https://kit.fontawesome.com/b0d7422f2a.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-        <a href="#" alt="LynDizon Progress Coach">LYN. <br>DZN <br> Progess Coach</a>
+          <div class="display-sm-none display-md-inline-flex">LYN.<br> DZN <br> progresscoach</div>
+        
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
           <img class="icon-hamburger" src="images/Hamburger_icon.svg" alt="" aria-hidden="true">
           <img class="icon-close" src="images/icons8-close.svg" alt="" aria-hidden="true"> 
@@ -31,7 +32,7 @@
           <li><a href="#">Pricing</a></li>
         </ul>
         </nav>
-        <button class="button | display-sm-none display-md-inline-flex">Lets Do This</button>
+        <a href="index.html" alt="lyn coaching logo"> <img src="images/toad.png" class="header-logo"></a>
       </div>
       </div>
     </header>
@@ -40,18 +41,19 @@
     <main>
       <section class="padding-block-900">
         <div class="container">
-          <div class="even-columns"></div>
-          <div>
+          <div class="even-columns">
+          <div class="flow">
             <h1 class="fs-primary-heading fw-bold">Hi im Lyn, Your Progress Coach</h1>
-            <p>“Build a dream and the dream will build you.”
-
-              Robert H. Schuller
+            <p><span style="font-weight: bold">Coach and content creator</span><br>
+              She encourages people to create the life story they want for themselves and build resilience.
+               With a focus on building self-awareness. 
               </p>
             <button class="button">Lets Do This</button>
           </div>
           <div>
-            <img src="#" alt="" srcset="">
+            <img src="images/whitelyn.png" alt="Lyn sitting on a chair" class="main-img">
           </div>
+        </div>
         </div>
       </section>
 
@@ -90,7 +92,7 @@
 </section>
 
 <section class="carousel | padding-block-700">
-  <h2 class="fs-secondary-heading fw-bold">What People Have Said</h2>
+  <h2 class="fs-secondary-heading fw-bold">What People Are Saying</h2>
   <!-- put carousel here -->
   <button class="button">Let's Do This</button>
 </section>
@@ -116,11 +118,27 @@
   <div class="even-columns vertical-align-center">
     <div>       
       <a href="#" alt="LynDizon Progress Coach Logo">LynDizon</a>
-      <ul role="list" aria-label="social media links">
-        <li><a aria-label="#" href="#">ig</a></li>
-        <li><a aria-label="#" href="#">yt</a></li>
-        <li><a aria-label="#" href="#">idk</a></li>
-        <li><a aria-label="#" href="#">idk</a></li>
+      <ul class="social-list" role="list" aria-label="social media links">
+        <li><a aria-label="instagram" href="#">
+          <svg class="social-icon">
+            <use xlink:href="images/socials.svg#instagram"></use>
+          </svg></a>
+        </li>
+      <li><a aria-label="youtube" href="#">
+        <svg class="social-icon">
+          <use xlink:href="images/socials.svg#youtube"></use>
+        </svg></a>
+      </li>
+        <li><a aria-label="tiktok" href="#">
+          <svg class="social-icon">
+          <use xlink:href="images/socials.svg#tiktok"></use>
+        </svg></a>
+      </li>
+      <li><a aria-label="calendly" href="#">
+        <svg class="social-icon">
+        <use xlink:href="images/socials.svg#calendar-days-solid"></use>
+      </svg></a>
+    </li>
       </ul>
     </div>
 
