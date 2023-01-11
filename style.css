@@ -176,9 +176,7 @@ p[data-width="wide"]{
 .header-logo{
   max-width: 170px;
 }
-.main-img{
-  /* box-shadow: 6px 6px 3px 2px rgb(0 0 0 / 10%) */
-}
+
 .mobile-nav-toggle{
   display: none;
 }
