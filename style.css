@@ -124,7 +124,6 @@ body{
 }
 
 p:not([class]){
-opacity: 0.7;
 max-width: 42ch;
 }
 
@@ -177,9 +176,19 @@ p[data-width="wide"]{
   max-width: 170px;
 }
 
+.main-img{
+  width: 120%;
+  margin-left: -3rem;
+}
+
 .mobile-nav-toggle{
   display: none;
 }
+.main-img{
+  display: block;
+  justify-content: flex-end;
+}
+
 
 .nav-list{
   font-size: var(--fs-nav);
