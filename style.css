@@ -286,6 +286,36 @@ p[data-width="wide"]{
   
 }
 
+.primary-footer-wrapper{
+  display: grid;
+  gap: var(--size-600);
+  grid-template-areas: 
+  "form"
+  "nav"
+  "logo-social";
+}
+
+@media(min-width: 50em){
+  .primary-footer-wrapper{
+    grid-template-areas: "logo-social nav form";
+  }
+}
+
+
+.primary-footer-wrapper > :nth-child(1){
+  grid-area: logo-social;
+}
+.primary-footer-wrapper > :nth-child(2){
+  grid-area: nav;
+}.primary-footer-wrapper > :nth-child(3){
+  grid-area: form;
+}
+@media(max-width:50em){
+  .primary-footer-wrapper > *{
+    margin-inline: auto;
+  }
+}
+
 .footer-nav{
   columns: 2;
 }
@@ -304,8 +334,12 @@ p[data-width="wide"]{
   gap:var(--size-300)
 }
 
+.lynLogo{
+  margin-top: -40px;
+}
+
 .social-icon{
-  width: var(--size-600);
+  width: var(--size-300);
   fill: var(--clr-primary-neutral);
 }
 
@@ -314,6 +348,11 @@ p[data-width="wide"]{
 }
 
 @media(min-width:50em){
+  .social-list{
+    display: flex;
+    gap:var(--size-600)
+  }
+  
   .social-icon{
     width: var(--size-500);
   }
@@ -322,7 +361,7 @@ p[data-width="wide"]{
 
 /* util classes */ 
 .visually-hidden {
-  position: absolute;
+position: absolute;
 position: absolute !important;
 width: 1px !important;
 height: 1px !important;
@@ -370,7 +409,7 @@ border: 0 !important;
 }
 
 :where(.flow>:not(:first-child)){
-  margin-top: var(--flow-spacer, 3em);
+  margin-top: var(--flow-spacer, 2.5em);
 }
 
 .text-blue{
