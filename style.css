@@ -301,13 +301,18 @@ p[data-width="wide"]{
   }
 }
 
-
-.primary-footer-wrapper > :nth-child(1){
+.primary-footer-logo-social{
   grid-area: logo-social;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap:3rem;
+
 }
-.primary-footer-wrapper > :nth-child(2){
+
+.primary-footer-nav{
   grid-area: nav;
-}.primary-footer-wrapper > :nth-child(3){
+}.primary-footer-form{
   grid-area: form;
 }
 @media(max-width:50em){
