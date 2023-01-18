@@ -7,8 +7,8 @@
     <title>LynDznCoach</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+    
     <script src="https://kit.fontawesome.com/b0d7422f2a.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -93,9 +93,55 @@
   </div>
 </section>
 
-<section class="carousel | padding-block-700">
+<section class="carousel text-center | padding-block-700">
   <h2 class="fs-secondary-heading fw-bold">What People Are Saying</h2>
-  <!-- put carousel here -->
+  <ul class="slider">
+    <li> <img src="images/testimonials/Ankita.png" alt="Ankita Profile Picture">
+      <div class="slider-content | flow" style="--flow-spacer: 1rem">
+      <h3 class="fw-bold">Ankita</h3>
+      <p data-width="wide">"You made me a better person overall, I had a hard time asking myself some
+         seriously difficult questions and then doing something about it, she helped me open up to myself 
+         about the possibilities of what could happen if I actually faced them. And she is such a lovely person,
+          I loved talking to her, and listening to what she had to share. I think everyone is looking for 
+          that motivation
+         in life that can help them test their limits and be better, for me it was her."</p>
+      </div>
+    </li>
+
+    <li>
+      <img src="images/testimonials/Cat.png" alt="Cat Profile Picture">
+      <div class="slider-content | flow" style="--flow-spacer: 1rem">
+      <h3 class="fw-bold">Cat</h3>
+      <p data-width="wide"> Lyn was extremely easy to talk to. She made sure that the
+         conversation flowed and was an amazing listener. The most impactful part of
+          our session was when she pointed out the way I was talking about my future goals. 
+          I was talking about them in ‘maybes’, ‘probably’, and ‘I’ll try to as opposed to clearly saying what I’ll do to achieve them. She made me realize that I was already planning not to achieve my goal through my speech. I realized that if I change the way I affirm my process through speaking it can reconfirm
+         the achieve-ability of my goal for myself. </p>
+      </div>
+    </li>
+    <li>
+      <img src="images/testimonials/Nicole.png" alt="Nicole Profile Picture">
+      <div class="slider-content | flow" style="--flow-spacer: 1rem">
+      <h3 class="fw-bold">Nicole</h3>
+     
+      <p data-width="wide">" Lyn showed me how my goals were completely attainable, even if they didn't 
+        feel that way, and helped me break them down into actionable steps. Even though I was asking for 
+        help with some habits I was pretty embarrassed about, Lyn was incredibly understanding and empathetic. 
+        I never once felt judged or guilty and became very comfortable opening up fully to her"</p>
+      </div>
+    </li>
+    <li>
+      <img src="images/testimonials/Stacy.png" alt="Stacey Profile Picture">
+      <div class="slider-content | flow" style="--flow-spacer: 1rem">
+      <h3 class="fw-bold">Stacey</h3>
+      <p data-width="wide">My goal was to be more productive and manage my time more effectively, 
+        Lyn helped me realise patterns that were disturbing or distracting my productivity. 
+        It was a wholesome experience to understand and rewire my routine making it more purposeful. 
+        I am grateful for the opportunity given by Lyn, 
+        as my coaching was handled with care, honesty,  and understanding.</p>
+        </div>
+    </li>
+  </ul>
   <button class="button">Let's Do This</button>
 </section>
 
@@ -157,7 +203,7 @@
     </div>
     <div class="primary-footer-form">
       <form action="">
-        <input type="email"><button class="button">Send</button>
+        <input type="email"><button class="button" data-shadow="none">Send</button>
       </form>
     </div>
   </div>
@@ -165,7 +211,7 @@
 </footer>
 
 
-
+<script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
     <script type="module" src="main.js"></script>
   </body>
 </html>
