@@ -543,20 +543,8 @@ p[data-width="wide"]{
   }
 }
 
-
-.ani{
-	font-size: 3em;
-	position: relative;
-	top: 40%;
-  text-align: center;
-  margin-top: 100px;
-}
-.ani:after{
-	background: #404040;
+#animation:after{
 	content: " ";
-	width: 2px;
-	height: 1.2em;
-	margin-left: 2px;
 	position: absolute;
 	animation: blink 0.5s infinite;
 }
