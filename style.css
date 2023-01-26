@@ -185,6 +185,12 @@ p[data-width="wide"]{
   font-size: var(--fs-largest);
   margin-top: -2rem;
 }
+
+@media(max-width:50em){
+  #intro-main{
+    font-size: var(--fs-large);
+  }
+}
 .header-logo{
   max-width: 170px;
   margin-left: -2.5rem;

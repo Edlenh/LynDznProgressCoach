@@ -22,12 +22,14 @@ const slider = new A11YSlider(document.querySelector('.slider'), {
       }
   });
 
-'use strict';
+
 var pause = 2;
 var speed = 2;
-var texts = ['feel stuck and confused about life?' ,
- 'feel dissatisfied with where you are in life?',
- 'desire change in your life ?',
+var texts = ['Do you feel stuck and confused about life?' ,
+ 'Do you feel dissatisfied with where you are in life?',
+ 'Do desire change in your life?',
+ 'if so...',
+"are you ready to create the life that you don't need to escape from?"
 ];
 (function() {
   var text = texts[0];
@@ -42,7 +44,7 @@ var texts = ['feel stuck and confused about life?' ,
     if (cur < 0) {
       cur = 0;
       dir = -dir;
-      cur_text = (++cur_text) % 3;
+      cur_text = (++cur_text) % 5;
       text = texts[cur_text];
     }
     if (cur > text.length) {
