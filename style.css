@@ -538,6 +538,27 @@ p[data-width="wide"]{
 }
 
 
+.ani{
+	font-size: 3em;
+	position: relative;
+	top: 40%;
+  text-align: center;
+  margin-top: 100px;
+}
+.ani:after{
+	background: #404040;
+	content: " ";
+	width: 2px;
+	height: 1.2em;
+	margin-left: 2px;
+	position: absolute;
+	animation: blink 0.5s infinite;
+}
+@keyframes blink{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+
 /* util classes */ 
 .visually-hidden {
 position: absolute;
