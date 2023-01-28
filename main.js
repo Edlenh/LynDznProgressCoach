@@ -27,10 +27,12 @@ var pause = 2;
 var speed = 2;
 var texts = ['Do you feel stuck and confused about life?' ,
  'Do you feel dissatisfied with where you are in life?',
- 'Do desire change in your life?',
+ 'Do you desire change in your life?',
  'if so...',
 "are you ready to create the life that you don't need to escape from?"
 ];
+var subtext =  "start creating the life that you don't need to escape from.";
+
 (function() {
   var text = texts[0];
   var cur = 0,
@@ -56,6 +58,8 @@ var texts = ['Do you feel stuck and confused about life?' ,
     }
     document.querySelector("#animation").setAttribute('class', text.toLowerCase())
     document.querySelector("#animation").innerHTML = text.substring(0, cur);
+    // document.querySelector("#substring").setAttribute('class', subtext.toLowerCase())
+    // document.querySelector("#substring").innerHTML = subtext.substring(0, cur);
   }, 100 / speed)
 
 })()

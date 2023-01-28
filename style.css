@@ -1,5 +1,5 @@
 :root{
-    --clr-primary-tan: #F0EFD6;
+    --clr-primary-tan: #F7F5E8;
     --clr-primary-blue: #7694B2;
     --clr-primary-orange: #E5A055;
     --clr-primary-neutral:#ffff;
@@ -8,6 +8,7 @@
     --clr-accent-black:rgba(13, 11, 11, 0.811);
 
     --ff-primary: 'Playfair Display', serif;
+    --ff-secondary: 'Playfair Display';
     --fw-slight:100;
     --fw-regular: 400;
     --fw-med: 500;
@@ -78,7 +79,7 @@ html:focus-within {
 html,
 body{
     height: 100%;
-    font-family: var(--ff-primary);
+    font-family: 'Playfair Display', serif;
 }
 
 /* Set core body defaults */
@@ -158,10 +159,10 @@ p[data-width="wide"]{
 
 }
 
-.button:hover,
+/* .button:hover,
 .button:focus-visible{
   background-color: var(--clr-accent-black);
-}
+} */
 
 /* navigation stuff */
 .nav-wrapper{
@@ -231,8 +232,11 @@ p[data-width="wide"]{
 
 .container-sub{
   font-style: italic;
+  line-height: 1;
 }
-
+.italic{
+  font-style: italic;
+}
 .main-container {
   display: grid;
   place-items: center;
@@ -263,7 +267,7 @@ p[data-width="wide"]{
   border-radius: 10px;
   height: 10px;
   width: 255px;
-  border-bottom: 10px solid var(--clr-primary-orange);
+  border-bottom: 10px solid #f8c135;
 }
 .mobile-nav-toggle{
   display: none;
@@ -359,8 +363,7 @@ p[data-width="wide"]{
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-image: url("images/orangeFlower.png"),
-  url("images/whiteLine.png");
+  background-image: url("images/blueLine.png");
   background-position: 10rem -6rem, 10rem -6rem;
   background-repeat: no-repeat;
   
@@ -411,7 +414,7 @@ p[data-width="wide"]{
 .slider-content{
     border-radius: var(--size-300);
     padding:var(--size-700) var(--size-600) var(--size-600);
-    background: var(--clr-accent-tan);
+    background: var(--clr-primary-tan)
   }
 
 .slider img{
@@ -549,6 +552,17 @@ p[data-width="wide"]{
 	animation: blink 0.5s infinite;
 }
 @keyframes blink{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+
+#substring:after{
+	content: " ";
+	position: absolute;
+	animation: appear 0.5s infinite;
+  
+}
+@keyframes appear{
 	from{opacity: 1;}
 	to{opacity: 0;}
 }
