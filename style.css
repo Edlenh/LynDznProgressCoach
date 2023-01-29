@@ -101,6 +101,15 @@ svg {
   display: block;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
@@ -151,7 +160,8 @@ p[data-width="wide"]{
 
 .button[data-type="inverted"] {
   background-color: var(--clr-primary-neutral);
-  color: var(--clr-primary-blue)
+  color: var(--clr-neutral-black);
+  font-size: 15px;
 }
 
 .button[data-shadow="none"]{
@@ -159,10 +169,10 @@ p[data-width="wide"]{
 
 }
 
-/* .button:hover,
+.button:hover,
 .button:focus-visible{
-  background-color: var(--clr-accent-black);
-} */
+  background-color: var(--clr-primary-orange);
+}
 
 /* navigation stuff */
 .nav-wrapper{
@@ -182,6 +192,22 @@ p[data-width="wide"]{
 /* #main-question{
   line-height: 1.95rem;
 } */
+
+
+
+.mission-container {
+  position: relative;
+}
+
+
+.mission-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+}
+
 #intro-main{
   font-size: var(--fs-largest);
   margin-top: -2rem;
@@ -293,6 +319,10 @@ p[data-width="wide"]{
 }
 
 @media(max-width:50em){
+  .primary-header[data-overlay]{
+    position: relative;
+    z-index: 999;
+  }
   .primary-navigation{
     display:none;
     position: fixed;
@@ -303,7 +333,6 @@ p[data-width="wide"]{
     background: var(--clr-primary-tan);
     border-radius: var(--size-100);
     gap: var(--size-600);
-
     box-shadow: 0 0 0.75em rgb(0,0,0,0.05)
   }
 
@@ -350,8 +379,6 @@ p[data-width="wide"]{
   text-align: center;
 }
 
-
-
 @media(min-width:50em){
   .cta{
     text-align: left;
@@ -363,10 +390,10 @@ p[data-width="wide"]{
   position: absolute;
   z-index: -1;
   inset: 0;
-  background-image: url("images/blueLine.png");
-  background-position: 10rem -6rem, 10rem -6rem;
+  /* background-image: url("images/blueLine.png");
+  background-position: -20rem 0;
   background-repeat: no-repeat;
-  
+  background-size: 100vh 100vw; */
 }
 
 /* carousel stuff */
