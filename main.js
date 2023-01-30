@@ -58,8 +58,6 @@ var subtext =  "start creating the life that you don't need to escape from.";
     }
     document.querySelector("#animation").setAttribute('class', text.toLowerCase())
     document.querySelector("#animation").innerHTML = text.substring(0, cur);
-    // document.querySelector("#substring").setAttribute('class', subtext.toLowerCase())
-    // document.querySelector("#substring").innerHTML = subtext.substring(0, cur);
   }, 100 / speed)
 
 })()

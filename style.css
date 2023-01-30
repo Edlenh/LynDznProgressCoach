@@ -371,21 +371,14 @@ p[data-width="wide"]{
   display: none;
 }}
 
-@media only screen and (min-width: 1200px) {
-  .yellow-arrows{
-    width: 22%;
-    z-index: -1;
-    position: absolute;
-  
-}}
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1200px){
   .yellow-arrows{
     width: 22%;
     z-index: -1;
     position: absolute;
-    top: 150px;
-    left: 17rem;
+    top: 110px;
+    left: 18rem;
   }
 }
 
@@ -394,9 +387,13 @@ p[data-width="wide"]{
       width: 50%;
       z-index: -1;
       position: absolute;
-      top: 150px;
+      top: 137px;
       left: 14rem;
   }
+}
+
+.yellow-arrows{
+  transform: rotate(-10deg);
 }
 
 .cta{
@@ -599,11 +596,28 @@ p[data-width="wide"]{
   }
 }
 
+#animation{
+  position: absolute;
+  line-height: 1;
+}
+
 #animation:after{
-	content: " ";
+	content: "";
 	position: absolute;
 	animation: blink 0.5s infinite;
   animation-iteration-count: infinite;
+
+}
+
+@media(min-width:30em){
+  #animation:after{
+  content: " ";
+	position: absolute;
+	animation: blink 0.5s infinite;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+
+  }
 }
 @keyframes blink{
 	from{opacity: 1;}
