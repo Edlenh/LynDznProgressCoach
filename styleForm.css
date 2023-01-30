@@ -27,7 +27,7 @@ input:focus, textarea:focus{
     outline-width: 0;font-weight: 400
 }
 .btn-block{text-transform: uppercase;
-    font-size: 15px !important;
+    font-size: 15px;
     font-weight: 400;
     height: 43px;
     cursor: pointer
@@ -40,3 +40,34 @@ button:focus{-moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     outline-width: 0}
+
+.button{
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  border-radius:10px;
+  padding: 0.5em 1.5em;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-button);
+  line-height: 1.5;
+  background-color: var(--clr-neutral-black);
+  color:var(--clr-primary-neutral);
+  box-shadow: 0 1.125em 1em -1em var(--clr-accent-black);
+}
+
+.button[data-type="inverted"] {
+    background-color: var(--clr-primary-neutral);
+    color: var(--clr-neutral-black);
+    font-size: 15px;
+  }
+  
+  .button[data-shadow="none"]{
+    box-shadow: none;
+  
+  }
+  
+  .button:hover,
+  .button:focus-visible{
+    background-color: var(--clr-primary-orange);
+  }
