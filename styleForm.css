@@ -11,7 +11,7 @@
 .form-control-label{
     margin-bottom: 0
 }
-input, textarea, button
+input, textarea, .fbutton
 {padding: 8px 15px;
     border-radius: 5px !important;
     margin: 5px 0px;
@@ -41,33 +41,19 @@ button:focus{-moz-box-shadow: none !important;
     box-shadow: none !important;
     outline-width: 0}
 
-.button{
-  display: inline-flex;
-  cursor: pointer;
-  text-decoration: none;
-  border: 0;
-  border-radius:10px;
-  padding: 0.5em 1.5em;
-  font-weight: var(--fw-bold);
-  font-size: var(--fs-button);
-  line-height: 1.5;
-  background-color: var(--clr-neutral-black);
-  color:var(--clr-primary-neutral);
-  box-shadow: 0 1.125em 1em -1em var(--clr-accent-black);
+.image-container {
+        position: relative;
+        margin-top: -7rem;
+        margin-bottom: -6rem;
+      }
+      
+.text-overlay {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+.text-overlay h3{
+    font-size: 50px;
+    font-style: italic;
 }
-
-.button[data-type="inverted"] {
-    background-color: var(--clr-primary-neutral);
-    color: var(--clr-neutral-black);
-    font-size: 15px;
-  }
-  
-  .button[data-shadow="none"]{
-    box-shadow: none;
-  
-  }
-  
-  .button:hover,
-  .button:focus-visible{
-    background-color: var(--clr-primary-orange);
-  }
