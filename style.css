@@ -374,7 +374,7 @@ p[data-width="wide"]{
 
 @media only screen and (min-width: 1200px){
   .yellow-arrows{
-    width: 22%;
+    width: 20%;
     z-index: -1;
     position: absolute;
     top: 110px;
@@ -387,8 +387,8 @@ p[data-width="wide"]{
       width: 50%;
       z-index: -1;
       position: absolute;
-      top: 137px;
-      left: 14rem;
+      top: 160px;
+      left: 12.5rem;
   }
 }
 
