@@ -1,3 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+
 .poem{
     line-height: 2rem;
+
 }
+p {
+    font-size: 20px;
+  }
+
+.grid-container {
+    padding: 100px 30px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+  
+.image-stack {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+}
+  
+.image-stack__item--bottom {
+    grid-column: 4 / -1;
+    grid-row: 1;
+}
+  
+.image-stack__item--top {
+    grid-row: 1;
+    grid-column: 1 / span 8;
+    padding-top: 20%;
+    z-index: 1;
+}
+  
+img {
+    width: 50%;
+    display: block;
+  }

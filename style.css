@@ -189,9 +189,6 @@ p[data-width="wide"]{
 
 }
 
-/* #main-question{
-  line-height: 1.95rem;
-} */
 
 
 
@@ -374,6 +371,33 @@ p[data-width="wide"]{
   display: none;
 }}
 
+@media only screen and (min-width: 1200px) {
+  .yellow-arrows{
+    width: 22%;
+    z-index: -1;
+    position: absolute;
+  
+}}
+
+@media only screen and (min-width: 1024px){
+  .yellow-arrows{
+    width: 22%;
+    z-index: -1;
+    position: absolute;
+    top: 150px;
+    left: 17rem;
+  }
+}
+
+@media(max-width:50em){
+    .yellow-arrows{
+      width: 50%;
+      z-index: -1;
+      position: absolute;
+      top: 150px;
+      left: 14rem;
+  }
+}
 
 .cta{
   position: relative;
@@ -579,6 +603,7 @@ p[data-width="wide"]{
 	content: " ";
 	position: absolute;
 	animation: blink 0.5s infinite;
+  animation-iteration-count: infinite;
 }
 @keyframes blink{
 	from{opacity: 1;}

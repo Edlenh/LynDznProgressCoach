@@ -56,4 +56,5 @@ button:focus{-moz-box-shadow: none !important;
 .text-overlay h3{
     font-size: 50px;
     font-style: italic;
+    font-family: 'Playfair Display', serif;
 }
