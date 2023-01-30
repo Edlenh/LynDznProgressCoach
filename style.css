@@ -202,6 +202,8 @@ p[data-width="wide"]{
 
 .mission-text {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -275,7 +277,7 @@ p[data-width="wide"]{
 }
 
 .foreground {
-  position: relative; /* to ensure that it is in front of the background image */
+  position: relative; 
 }
 
 
@@ -593,6 +595,7 @@ p[data-width="wide"]{
 	from{opacity: 1;}
 	to{opacity: 0;}
 }
+
 
 /* util classes */ 
 .visually-hidden {
