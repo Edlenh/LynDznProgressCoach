@@ -410,7 +410,7 @@ p[data-width="wide"]{
 @media(min-width:1024px){
   .yellow-circle{
     transform: scale(5);
-    top: 39px;
+    top: 35px;
     left: 9px;
   }
 }
@@ -418,7 +418,7 @@ p[data-width="wide"]{
 @media(min-width:1200px){
   .yellow-circle{
     transform: scale(5);
-    top: 39px;
+    top: 35px;
     left: 9px;
   }
 }
