@@ -371,14 +371,28 @@ p[data-width="wide"]{
   display: none;
 }}
 
+.key{
+  position: relative;
 
-@media only screen and (min-width: 1200px){
+}
+
+.yellow-arrows{
+  transform: scale(3.5);
+  width: 50%;
+  z-index: -1;
+  position: absolute;
+  top: -12px;
+  left: 25px;
+
+}
+
+/* @media only screen and (min-width: 1200px){
   .yellow-arrows{
-    width: 20%;
+     width: 50%;
     z-index: -1;
     position: absolute;
-    top: 110px;
-    left: 18rem;
+    top: -50px;
+    left: 0;
   }
 }
 
@@ -387,14 +401,11 @@ p[data-width="wide"]{
       width: 50%;
       z-index: -1;
       position: absolute;
-      top: 160px;
-      left: 12.5rem;
+      top: -50px;
+      left: 0;
   }
-}
+} */
 
-.yellow-arrows{
-  transform: rotate(-10deg);
-}
 
 .cta{
   position: relative;
