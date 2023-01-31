@@ -386,27 +386,32 @@ p[data-width="wide"]{
 
 }
 
-/* @media only screen and (min-width: 1200px){
-  .yellow-arrows{
-     width: 50%;
-    z-index: -1;
-    position: absolute;
-    top: -50px;
-    left: 0;
+.circle{
+  position: relative;
+}
+
+.yellow-circle{
+  width: 69px;
+  position: absolute;
+  transform: scale(3.5);
+  top: 20px;
+}
+
+@media(min-width:1024px){
+  .yellow-circle{
+    transform: scale(5);
+    top: 39px;
+    left: 9px;
   }
 }
 
-@media(max-width:50em){
-    .yellow-arrows{
-      width: 50%;
-      z-index: -1;
-      position: absolute;
-      top: -50px;
-      left: 0;
+@media(min-width:1200px){
+  .yellow-circle{
+    transform: scale(5);
+    top: 39px;
+    left: 9px;
   }
-} */
-
-
+}
 .cta{
   position: relative;
   isolation: isolate;
@@ -424,10 +429,6 @@ p[data-width="wide"]{
   position: absolute;
   z-index: -1;
   inset: 0;
-  /* background-image: url("images/blueLine.png");
-  background-position: -20rem 0;
-  background-repeat: no-repeat;
-  background-size: 100vh 100vw; */
 }
 
 /* carousel stuff */
