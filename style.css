@@ -356,6 +356,10 @@ p[data-width="wide"]{
   }
 
 .mobile-nav-toggle{
+    background-image: url(images/icons8-close.svg);
+  }
+
+.mobile-nav-toggle{
   display:block;
   position: fixed;
   top:var(--size-600);
@@ -365,10 +369,16 @@ p[data-width="wide"]{
   background: transparent;
   border: 0;
   padding: 0.5em;
+  width: 1.5em;
+  aspect-ratio: 1;
+  background-image: url(images/Hamburger_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.mobile-nav-toggle .icon-close{
-  display: none;
+.mobile-nav-toggle[aria-expanded="true"]{
+  background-image: url(images/icons8-close.svg);
 }}
 
 .key{
