@@ -1,6 +1,6 @@
 .card{
     padding: 30px 40px;
-    margin-top: 60px;
+    margin-top: 90px;
     margin-bottom: 60px;
     border: none !important;
     box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)
@@ -11,14 +11,16 @@
 .form-control-label{
     margin-bottom: 0
 }
-input, textarea, .fbutton
-{padding: 8px 15px;
-    border-radius: 5px !important;
+input, textarea, .fbutton{   
+    padding: 8px 15px;
+    border-radius: 5px;
     margin: 5px 0px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    font-size: 18px !important;
-    font-weight: 300}
+    font-size: 18px;
+    font-weight: 300
+}
+
 input:focus, textarea:focus{
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
@@ -43,8 +45,8 @@ button:focus{-moz-box-shadow: none !important;
 
 .image-container {
         position: relative;
-        margin-top: -7rem;
-        margin-bottom: -6rem;
+        margin-top: -3rem;
+        margin-bottom: -5rem;
       }
       
 .text-overlay {
@@ -57,4 +59,12 @@ button:focus{-moz-box-shadow: none !important;
     font-size: 50px;
     font-style: italic;
     font-family: 'Playfair Display', serif;
+}
+
+ul{
+    padding-left: 0;
+}
+
+.footer-email{
+    font-size: 14px;
 }
