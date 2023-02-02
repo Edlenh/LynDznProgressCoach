@@ -6,3 +6,31 @@
     position: absolute;
     z-index: -1;
 }
+
+.primary-footer-form input{
+    font-size: 10px;
+}
+.primary-footer-form ::placeholder{
+    font-size: 13px;
+}
+
+.primary-footer-form button{
+    font-size: 13px;
+}
+
+  @media(min-width: 30em){
+    .month img{
+        top: -208px;
+        left: 50px;
+        transform: scale(0.5);
+    }
+  }
+   
+
+  @media(min-width: 48em){
+    .month img{
+      position: absolute;
+      top: -267px;
+    }
+  }
+  
