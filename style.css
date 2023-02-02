@@ -779,6 +779,10 @@ border: 0 !important;
 .fs-medium{font-size: var(--fs-medium);}
 
 
+.padding-block-100{
+  padding-block: var(--size-100)
+}
+
 .padding-block-500{
   padding-block: var(--size-500)
 }

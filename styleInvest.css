@@ -1,0 +1,8 @@
+.month{
+    position: relative;
+}
+
+.month img{
+    position: absolute;
+    z-index: -1;
+}

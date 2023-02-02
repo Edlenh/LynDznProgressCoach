@@ -1,3 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+
 .card{
     padding: 30px 40px;
     margin-top: 90px;
