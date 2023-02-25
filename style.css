@@ -616,6 +616,15 @@ p[data-width="wide"]{
   fill:var(--clr-accent-black)
 }
 
+.about-main{
+  font-size: var(--fs-large);
+}
+
+.poem li{
+  list-style: none;
+  font-size: var(--fs-secondary-heading);
+  line-height: normal;
+}
 
 @media(min-width:50em){
   .social-list{
@@ -772,6 +781,8 @@ border: 0 !important;
     font-size: var(--fs-subheading);
     line-height: 2.1;
 }
+
+
 
 .fs-xs{font-size: var(--fs--smaller);}
 .fs-small{font-size: var(--fs-small);}
