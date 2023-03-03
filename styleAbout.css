@@ -40,7 +40,7 @@ p {
 }
 #lyn1{
     position: absolute;
-    z-index: 3;    /* Place this image in front of the img2 */
+    z-index: 3;    
     width: 100%;
     left: 55px;
     top:0;
@@ -56,8 +56,8 @@ p {
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
-    height: 50px;
-    position: relative;
+    /* height: 50px; */
+    /* position: relative; */
 }
 
 
