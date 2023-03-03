@@ -52,10 +52,12 @@ p {
 }
 
 .about-image-container{
-    background-image: url("images/yellowBg.webp");
+    background-image: url("images/Yellow\ Stripe\ 3.webp");
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
+    height: 50px;
+    position: relative;
 }
 
 
@@ -89,9 +91,11 @@ p {
 
 .methods{
   position: relative;
-  background-image: url("images/blueStreak.png");
-  background-position: left;
+  background-image: url("images/Blue\ Stripe\ 3\ .webp");
+  background-position: right;
   background-repeat: no-repeat; 
   background-size: cover;
+  /* background-size: 300px; */
+  height:450px
 }
 
