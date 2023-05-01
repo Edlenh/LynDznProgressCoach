@@ -1,4 +1,6 @@
 # Lyn Dizon Professional Life Coaching
+
+### Professional Life Coaching website designed to aid clients in better improving their overall life styles
   
   ## Table of Contents:
   ###  [Installation](#installation)
